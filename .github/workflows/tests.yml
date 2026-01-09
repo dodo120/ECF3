@@ -18,7 +18,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name : Start Medibook Docker Services
-      run: docker compose -f ../medibook/docker-compose.yml up -d --build
+      run: docker compose -f medibook/docker-compose.yml up -d --build
     - name: Run Playwright tests
       run: npx playwright test
     - uses: actions/upload-artifact@v4
