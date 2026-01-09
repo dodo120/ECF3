@@ -1,0 +1,10 @@
+{
+    "SearchDoctorBySpecialtyAndCity": {
+        "specialty": "Médecin généraliste",
+        "city": "Paris"
+    },
+    "SearchWithoutResults": {
+        "specialty": "Cardiologue",
+        "city": "Village Inexistant"
+    }
+}

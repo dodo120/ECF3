@@ -1,0 +1,14 @@
+{
+    "NewUser": {
+        "firstName": "Test",
+        "lastName": "Automatise",
+        "email": "test.auto@email.com",
+        "password": "Password123!"
+    },
+    "ExistingUser": {
+        "firstName": "Jean",
+        "lastName": "Dupont",
+        "email": "jean.dupont@email.com",
+        "password": "Password123!"
+    }
+}

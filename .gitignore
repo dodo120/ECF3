@@ -1,0 +1,8 @@
+# Dépendances Node
+/tests/node_modules/
+/medibook/backend/node_modules/
+/medibook/frontend/node_modules/
+
+# Rapports Playwright
+/tests/playwright-report/
+/tests/test-results/
