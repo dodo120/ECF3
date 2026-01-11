@@ -1,4 +1,4 @@
-# 📘 ECF3 – Automatisation des tests end-to-end avec Playwright
+# ECF3 – Automatisation des tests end-to-end avec Playwright
 
 Ce projet a été réalisé dans le cadre de l’**ECF 3**.  
 Il met en œuvre des **tests end-to-end (E2E)** automatisés avec **Playwright**, une **intégration CI/CD via GitHub Actions**, ainsi qu’une **gestion des données et de l’environnement grâce à Docker Compose**.
@@ -42,21 +42,21 @@ ECF3/
 ```
 ---
 
-## 📦 Installation du projet
+## Installation du projet
 
-### 1 Cloner le dépôt
+### 1-Cloner le dépôt
 
 ```bash
 git clone https://github.com/dodo120/ECF3.git
 cd ECF3/tests
 ```
 
-### 2 Installer les dépendances Node.js
+### 2-Installer les dépendances Node.js
 ```bash
 npm ci
 ```
 
-### 3 Installer les navigateurs Playwright
+### 3-Installer les navigateurs Playwright
 ```bash
 npx playwright install --with-deps
 ```
