@@ -88,5 +88,32 @@ Cette commande permet de :
 - Arrêter tous les containers
 - Supprimer les volumes et les données persistantes
 
-➡️ Elle garantit un environnement propre pour une nouvelle exécution
-➡️ Elle est utilisée pour la gestion des données de test demandée dans le livrable
+## Gestion des données de test
+
+La gestion des données de test est assurée via **Docker Compose** afin de garantir des tests reproductibles et un environnement propre à chaque exécution.
+
+### Création des données de test
+
+Les données nécessaires aux tests automatisés sont initialisées grâce au fichier : seed.sql
+
+Ce script SQL est exécuté lors du démarrage des services Docker et permet :
+- d’initialiser la base de données
+- de créer des jeux de données de test cohérents
+- de garantir un état connu et maîtrisé pour l’exécution des tests Playwright
+
+Cette approche permet d’assurer la fiabilité des scénarios de test et d’éviter toute dépendance à des données persistantes ou manuelles.
+
+### Nettoyage des données
+
+Les données créées pour les tests ne sont pas conservées après l’exécution.  
+Lors de l’arrêt des services avec la commande suivante :
+
+```bash
+docker compose down -v
+```
+
+- les containers Docker sont arrêtés
+- les volumes sont supprimés
+- l’ensemble des données générées (y compris celles issues de seed.sql) est supprimé
+
+Cette méthode garantit que chaque nouvelle exécution des tests démarre sur un environnement propre, répondant ainsi aux bonnes pratiques de gestion des données de test.
